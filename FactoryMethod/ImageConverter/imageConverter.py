@@ -10,3 +10,5 @@ def convert_image(input_format, output_format):
         print(f"No converter found for format: {output_format}")
 
 pic1 = convert_image('gif', 'png')
+pic2 = convert_image('jpeg', 'gif')
+pic3 = convert_image('png', 'jpeg')
