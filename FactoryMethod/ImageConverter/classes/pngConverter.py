@@ -1,7 +1,9 @@
 from .converterBase import Converter
 
 class PngConverter(Converter):
+    def __init__(self, format):
+        super().__init__(format)
+        
     def convert(self, input_format):
-        self.input_format = input_format
-        print(f"Converting from {self.input_format} to PNG.")
+        print(f"Converting from {input_format} to PNG.")
         

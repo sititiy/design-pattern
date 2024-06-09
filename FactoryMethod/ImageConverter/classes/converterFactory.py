@@ -10,6 +10,9 @@ class ConvertFactory:
             "gif" : GifConverter
         }
 
-        image_converter = self.image_converters.get(format.lower())
-        return image_converter
+        converter_class = self.image_converters.get(format.lower())
+        
+
+        return converter_class(format)
+
 
